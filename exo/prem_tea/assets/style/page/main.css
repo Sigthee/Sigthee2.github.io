@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Bodoni;
+  src: url("../font/Bodoni_Moda/Bodoni.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .header_top {
+  display: flex;
+  justify-content: center;
+}
+header .header_top h1 {
+  font-family: Bodoni;
+  font-size: 60px;
+  margin: 0;
+}
+header .header_middle {
+  display: flex;
+  justify-content: space-between;
+}
+header .header_middle .header_middle_empty {
+  width: 33%;
+}
+header .header_middle .header_middle_title {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_middle .header_middle_title h2 {
+  font-size: 20px;
+  margin: 0;
+}
+header .header_middle .header_middle_title img {
+  width: 40px;
+  height: 25px;
+  margin-left: 6px;
+}
+header .header_middle .header_middle_right {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .header_middle .header_middle_right .header_middle_right_box {
+  margin-right: 8%;
+}
+header .header_middle .header_middle_right .header_middle_right_box .header_middle_right_button {
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+}
+header nav {
+  margin-top: 15px;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  padding: 5px 10%;
+}
+header nav .header_nav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav .header_nav_box a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+header nav .header_nav_box :hover {
+  color: chartreuse;
+}
+header nav .header_nav_box :nth-child(10) {
+  color: red;
+}
+header nav .header_nav_box .header_nav_search {
+  border: 1px solid #cecece;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+header nav .header_nav_box .header_nav_search input {
+  border: none;
+  outline: none;
+  height: 28px;
+}
+
+main {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+main .carousel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+main .carousel .slide {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+main .carousel .slide img {
+  width: 500px;
+  height: 500px;
+}/*# sourceMappingURL=main.css.map */
