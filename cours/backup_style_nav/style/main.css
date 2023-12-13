@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  transition: background-color 0.5s;
+}
+
+.dark-mode {
+  background-color: #333;
+}
+
+header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 80%, rgb(0, 212, 255) 100%);
+  border-bottom: 2px solid silver;
+}
+header .header_top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .header_top h1 {
+  font-size: 4em;
+  color: white;
+}
+header .header_top .header_switch {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header_top .header_switch div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  width: 12%;
+  height: 30px;
+  border-radius: 25px;
+  margin-right: 50px;
+  background-color: gray;
+}
+header .header_top .header_switch div:hover {
+  cursor: pointer;
+}
+header .header_top .header_switch div button {
+  border: none;
+  background-color: gray;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+header .header_top .header_switch div button:hover {
+  cursor: pointer;
+}
+header .header_top .dark-mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+header .header_top .dark-mode-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+header .header_top .dark-mode-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header .header_top .dark-mode-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+header .header_top .dark-mode-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+header .header_top .dark-mode-switch input:checked + .slider {
+  background-color: #2196F3;
+}
+header .header_top .dark-mode-switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+header .header_top .dark-mode-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+header .header_top .dark-mode-switch .slider.round {
+  border-radius: 34px;
+}
+header .header_top .dark-mode-switch .slider.round:before {
+  border-radius: 50%;
+}
+header .header_top .dark-mode-switch p {
+  font-size: 2em;
+}
+header .header_bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 40%;
+}
+header .header_bottom button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: silver;
+}
+header .header_bottom button:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.wrapper ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 28%;
+  padding: 20px 0;
+  margin: 40px auto;
+  border-radius: 15px;
+  list-style: none;
+  background-color: #cecece;
+  box-shadow: 3px 3px 10px 0px gray;
+}
+.wrapper ul:first-child {
+  margin: 10px 100%;
+  background-color: transparent;
+  box-shadow: none;
+}
+.wrapper ul:first-child a {
+  color: black;
+  text-decoration: none;
+  font-size: 5em;
+}
+.wrapper ul h3 {
+  margin: 0 auto;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper ul h3 a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper ul h3 a:hover {
+  color: grey;
+}
+.wrapper ul li {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper ul li a {
+  color: black;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+.wrapper ul li a:hover {
+  color: grey;
+}
+.wrapper ul li p {
+  font-size: 1.6em;
+  margin-right: 20px;
+}/*# sourceMappingURL=main.css.map */
