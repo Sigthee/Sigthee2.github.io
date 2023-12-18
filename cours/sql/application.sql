@@ -1,0 +1,49 @@
+CREATE DATABASE Application;
+
+USE Application;
+
+CREATE TABLE IF NOT EXISTS Software (
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    contact VARCHAR(255) NOT NULL,
+    version INT NOT NULL,
+    description TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Component (
+    id INT(11) PRIMARY KEY NOT NULL,
+    idSoftware INT(11) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    contact VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    CONSTRAINT SoftwareExist FOREIGN KEY (idSoftware) REFERENCES Software(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Package (
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    version INT NOT NULL,
+    maintainer VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Bug (
+    id INT(11) PRIMARY KEY NOT NULL,
+    idSCP INT(11) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    owner VARCHAR(255) NOT NULL,
+    created DATE NOT NULL,
+    updated DATE NOT NULL,
+    resolved DATE NOT NULL,
+    severity ENUM("1", "2", "3") NOT NULL,
+    status ENUM("1", "2", "3") NOT NULL,
+    summary VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    CONSTRAINT CSPExist FOREIGN KEY (idSCP) REFERENCES Component(id)
+    CONSTRAINT CSPExist FOREIGN KEY (idCSP) REFERENCES Software(id)
+    CONSTRAINT CSPExist FOREIGN KEY (idCSP) REFERENCES Package(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+);

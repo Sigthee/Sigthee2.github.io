@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cecece;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+header h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+form {
+  margin: 50px 0;
+}
+form table {
+  margin: 0 auto;
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+form table th, form table td {
+  padding: 5px 5px;
+  border: 1px solid black;
+  width: 20%;
+}
+form table td:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+form table td a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  margin: 0 5px;
+}
+form table td a:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+.read {
+  margin: 50px auto;
+  width: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.read th, .read td {
+  padding: 5px 5px;
+  border: 1px solid black;
+  width: 20%;
+}
+.read td a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  margin: 0 5px;
+}
+.read td a:hover {
+  text-decoration: underline;
+  color: crimson;
+}/*# sourceMappingURL=main.css.map */
