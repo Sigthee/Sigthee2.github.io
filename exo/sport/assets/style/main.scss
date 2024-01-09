@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 59);
+    padding-bottom: 200px;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 200px;
+        margin-top: 20px;
+        width: 30%;
+
+        a {
+            color: white;
+
+            &:first-child {
+                background-color: red;
+                padding: 4px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .headerCenter {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin: 50px auto;
+            background-color: white;
+            color: white;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+        h1 {
+            margin: 15px 0;
+            color: white;
+            font-size: 3em;
+        }
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            color: white;
+        }
+        a {
+            color: white;
+            background-color: red;
+            padding: 4px;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    .middleBox {
+        display: flex;
+        width: 40%;
+        
+        .leftBox {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                height: 310px;
+                width: 350px;
+                background-color: grey;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+
+                img {
+                    height: 70px;
+                    width: 108px;
+                }
+            }
+        }
+
+        .rightBox {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+
+            .rightTopBox {
+                display: flex;
+                flex-direction: column; 
+                justify-content: space-between;
+                height: 100%;
+
+                h2 {
+                margin: 15px 0;
+                color: red;
+                font-size: 1.9em;
+                }
+                h3 {
+                    margin: 15px 0;
+                }
+                p {
+                    margin: 4px 0;
+                }
+            }
+
+            .bottomRight {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

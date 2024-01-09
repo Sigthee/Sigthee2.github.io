@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+header .headerLeft {
+  width: 10%;
+}
+header .headerLeft img {
+  height: 50px;
+  width: 200px;
+}
+header .headerMiddle {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+header .headerMiddle nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+header .headerMiddle nav a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+header .headerMiddle nav a:last-child {
+  border-right: none;
+}
+header .headerMiddle nav a:hover {
+  background-color: rgb(143, 0, 0);
+  color: white;
+}
+header .headerMiddle nav a .borderRight {
+  border: 1px solid black;
+  width: 0px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  border-radius: 15px;
+}
+header .headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header .headerRight .searchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .headerRight .searchBar .glass {
+  position: absolute;
+  left: 0;
+}
+header .headerRight .searchBar input {
+  font-size: 1.2em;
+  padding-left: 20px;
+  border-radius: 25px;
+}/*# sourceMappingURL=main.css.map */

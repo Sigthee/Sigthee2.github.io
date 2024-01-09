@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 220px;
+  height: 220px;
+  background-color: rgb(170, 170, 170);
+}
+.container .box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(196, 0, 196);
+  overflow: hidden;
+}
+.container .box .content-box {
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  transition: margin-top 0.3s;
+  background-color: #ab00ab;
+}
+.container .box .content-box h1 {
+  padding: 0;
+  margin: 0;
+}
+.container .box:hover .content-box {
+  margin-top: 0;
+}/*# sourceMappingURL=main.css.map */
