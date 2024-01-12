@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(180, 180, 180);
 }
 .boite .oreilleGauche {
   position: absolute;
@@ -61,19 +62,47 @@
   height: 100px;
   border-radius: 50%;
   background-color: white;
+  overflow: hidden;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  left: 50px;
+  left: 100px;
   top: 200px;
 }
 .boite .visage .oeilGauche .pupilleGauche {
+  position: relative;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: black;
-  margin: 0 0 18px 18px;
+}
+.boite .visage .oeilGauche .paupiereGauche {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: rgb(78, 78, 78);
+  position: absolute;
+  top: -104px;
+  right: -2px;
+  animation: descendrePaupiereGauche 4s ease infinite 5s;
+}
+@keyframes descendrePaupiereGauche {
+  0% {
+    top: -104px;
+  }
+  25% {
+    top: -1px;
+  }
+  50% {
+    top: -104px;
+  }
+  75% {
+    top: -104px;
+  }
+  100% {
+    top: -104px;
+  }
 }
 .boite .visage .oeilDroit {
   width: 100px;
@@ -81,25 +110,69 @@
   border-radius: 50%;
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  right: 50px;
+  right: 100px;
   top: 200px;
+  overflow: hidden;
 }
 .boite .visage .oeilDroit .pupilleDroite {
+  position: relative;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: black;
-  margin: 18px 18px 0 0;
+}
+.boite .visage .oeilDroit .paupiereDroite {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background-color: rgb(78, 78, 78);
+  position: absolute;
+  top: -104px;
+  right: -2px;
+  animation: descendrePaupiereDroite 4s ease infinite 5s;
+}
+@keyframes descendrePaupiereDroite {
+  0% {
+    top: -104px;
+  }
+  25% {
+    top: -1px;
+  }
+  50% {
+    top: -104px;
+  }
+  75% {
+    top: -104px;
+  }
+  100% {
+    top: -104px;
+  }
 }
 .boite .visage .nez {
-  height: 200px;
-  width: 80px;
+  height: 180px;
+  width: 120px;
   background-color: pink;
-  border-radius: 35px;
+  border-radius: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  overflow: hidden;
   position: absolute;
   top: 40%;
-  left: 42%;
+  left: 39%;
+}
+.boite .visage .nez .narineGauche {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
+.boite .visage .nez .narineDroite {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

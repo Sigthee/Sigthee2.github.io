@@ -37,7 +37,7 @@
                 $dossiers = scandir($dir);
                 
                 foreach ($dossiers as $lien) {
-                    if ($lien!= '.' && $lien!= '..' && $lien!= 'index.php' && $lien!= '.git' && is_dir($lien)) {
+                    if ($lien!= '.' && $lien!= '..' && $lien!= 'index.php' && $lien!= '.git' && $lien!= 'exoSolo' && is_dir($lien)) {
                         echo "<ul>";                       
                         echo "<h3>" . $lien ."</h3>";
 
